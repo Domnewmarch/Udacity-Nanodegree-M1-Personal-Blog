@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 @import "./navigation.css";
 @import "./sidebar.css";
+@import "./responsive.css";
 
 body {
     padding: 0;
