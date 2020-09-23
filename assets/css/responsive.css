@@ -1,0 +1,40 @@
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .top-boxes-lower {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .boxes-lower {
+        width: 80%;
+        margin-top: 5px;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        align-items: center;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .about-box {
+        width: 100%;
+    }
+
+    aside {
+        min-width: 100%;
+    }
+
+    .leftcol {
+        min-width: 100%;
+    }
+
+}

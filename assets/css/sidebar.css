@@ -1,0 +1,60 @@
+/* sidebar */
+
+
+aside {
+    width: 30%;
+}
+
+.about-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin: auto;
+}
+
+.about-box .profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+.about-box .profile-header {
+    background: #fee2d9;
+    height: 40px;
+    width: 100%;
+    line-height: 40px;
+    border-radius: 2px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.about-box .profile-name {
+    font-family: 'Dancing Script', cursive;
+    font-size: 28px;
+    margin: 0;
+    margin-top: 5px;
+}
+
+.about-box .profile-about {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.about-social {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.about-social .social-links {
+    list-style: none;
+}
+
+.post {
+    display: flex;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}

@@ -1,0 +1,40 @@
+/* HEADER AREA */
+
+header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+    padding: 0;
+}
+
+.nav-links .nav-text-links {
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    
+}
+
+.nav-links .nav-list{
+    list-style: none;
+}
+
+.nav-links .nav-text-links:hover {
+    font-weight: bolder;
+    color: coral;
+}
+
+
+#nav-logo .main-logo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 48px;
+    text-transform: capitalize;
+}

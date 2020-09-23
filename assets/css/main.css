@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import "./navigation.css";
+@import "./sidebar.css";
 
 body {
     padding: 0;
@@ -13,43 +15,7 @@ body {
     align-items: center;
 }
 
-/* HEADER AREA */
 
-header {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-
-.nav-links {
-    display: flex;
-    justify-content: space-around;
-    width: 500px;
-    padding: 0;
-}
-
-.nav-links li {
-    list-style: none;
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-}
-
-.nav-links a:hover {
-    font-weight: bolder;
-    color: coral;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: black;
-}
-
-#nav-logo h4 {
-    font-family: 'Dancing Script', cursive;
-    font-size: 48px;
-    text-transform: capitalize;
-}
 
 /* Top Image Grid */
 
@@ -64,25 +30,25 @@ header {
     width: 24%;
 }
 
-.box1 img {
+.box1 .box-img {
     display: block;
     width: 100%;
     max-height: 30rem;
 }
 
-.box2 img {
+.box2 .box-img {
     display: block;
     width: 100%;
     max-height: 30rem;
 }
 
-.box3 img {
+.box3 .box-img {
     display: block;
     width: 100%;
     max-height: 30rem;
 }
 
-.box4 img {
+.box4 .box-img {
     display: block;
     width: 100%;
     max-height: 30rem;
@@ -120,8 +86,10 @@ header {
 
 .top-boxes-lower {
     margin-top: 20px;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin: 12px 60px;
 }
 
 .boxes-lower {
@@ -137,12 +105,15 @@ header {
     background-repeat: no-repeat;
     border-radius: 20%;
     display: flex;
+    background-size: cover;
+    width: 100%;
 }
 
 .box2-lower {
     background-image: url(/assets/img/link-box2.jpg);
     background-position: center;
-    background-size: contain;
+    background-size: cover;
+    width: 100%;
     background-repeat: no-repeat;
     border-radius: 20%;
     display: flex;
@@ -154,10 +125,12 @@ header {
     background-size: contain;
     background-repeat: no-repeat;
     border-radius: 20%;
+    background-size: cover;
+    width: 100%;
     display: flex;
 }
 
-.boxes-lower h4 {
+.boxes-lower .box-lower-text {
     align-items: center;
     justify-content: center;
     margin: auto;
@@ -172,108 +145,6 @@ header {
     text-transform: uppercase;
 }
 
-
-@media (min-width: 320px) and (max-width: 767px) {
-
-    .top-boxes-lower {
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .boxes-lower {
-        width: 80%;
-        margin-top: 5px;
-    }
-
-    .wrapper {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: auto;
-        align-items: center;
-    }
-
-    .container {
-        width: 100%;
-    }
-
-    .about-box {
-        width: 100%;
-    }
-
-    aside {
-        min-width: 100%;
-    }
-
-    .leftcol {
-        min-width: 100%;
-    }
-
-}
-
-/* sidebar */
-
-
-aside {
-    width: 30%;
-}
-
-.about-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10px;
-    margin: auto;
-}
-
-.about-box img {
-    width: 200px;
-    height: 200px;
-    border-radius: 100%;
-}
-
-.about-box h3 {
-    background: #fee2d9;
-    height: 40px;
-    width: 100%;
-    line-height: 40px;
-    border-radius: 2px;
-    margin-bottom: 30px;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.about-box h4 {
-    font-family: 'Dancing Script', cursive;
-    font-size: 28px;
-    margin: 0;
-    margin-top: 5px;
-}
-
-.about-box p {
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-}
-
-.about-social {
-    display: flex;
-    justify-content: space-around;
-    width: 80%;
-}
-
-.about-social li {
-    list-style: none;
-}
-
-.post {
-    display: flex;
-    margin-bottom: 2rem;
-    margin-top: 1rem;
-}
 
 .blog-posts {
     margin: 20px auto;
@@ -296,13 +167,13 @@ aside {
     margin: 1rem;
 }
 
-.post-box1 img {
+.post-box1-img{
     width: 100%;
     height: 200PX;
     border-radius: 10%;
 }
 
-.post-box1 a {
+.post-box1 .link-text-post {
     text-decoration: none;
     color: grey;
     font-weight: 300;
@@ -311,11 +182,11 @@ aside {
     margin-top: 5px;
 }
 
-.post-box1 a:hover {
+.post-box1 .link-text-post:hover {
     color: coral;
 }
 
-.post-box1 h4 {
+.post-box1 .post-text-header {
     font-size: 1rem;
     font-weight: 700;
     line-height: 1.5;
@@ -324,14 +195,14 @@ aside {
     color: black;
 }
 
-.post-box1 h4:hover {
+.post-box1 .post-text-header:hover {
     color: coral;
 }
 
 
 
 
-.post .post-img img {
+.post .post-img .post-img-side {
     border-radius: 10%;
     height: 5rem;
     width: 10rem;
@@ -341,14 +212,14 @@ aside {
     margin-left: 5px;
 }
 
-.post-text h4 {
+.post-text .sidebar-header-text {
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     font-weight: bold;
     text-transform: capitalize;
 }
 
-.post-text p {
+.post-text .sidebar-p-text {
     color: grey;
     text-transform: capitalize;
     font-size: 14px;
@@ -380,7 +251,19 @@ aside {
     text-align: center;
 }
 
-.post-btn a:hover {
+.btn-1{
+    font-size: 12px;
+    color: #b5aeba;
+    display: inline-block;
+    border: 1px solid #ebebeb;
+    border-radius: 30px;
+    height: 40px;
+    min-width: 170px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.btn-1:hover {
     text-decoration: none;
     -webkit-transition-duration: 500ms;
     transition-duration: 500ms;
@@ -393,7 +276,7 @@ aside {
     margin: 20px;
 }
 
-.main-img img {
+.main-img .main-img-food {
     width: 100%;
     height: auto;
     border-radius: 5%;
@@ -428,7 +311,7 @@ aside {
     font-weight: 700;
 }
 
-.sj-quote p {
+.sj-quote .qoute-name {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     text-transform: uppercase;
